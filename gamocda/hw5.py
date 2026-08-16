@@ -1,7 +1,7 @@
 #5)კომენტარების სახით ახსენით თუ რა მონაცემთა ტიპები გვაქვს პითონში და ჩამოწერეთ თითოეული
 
 #5)
-# string
-# boolen
-# float
-# intenger
+# string "დემეტრე"
+# boolen true False
+# float 10.5
+# intenger ყველა ციფრი

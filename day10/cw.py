@@ -38,7 +38,7 @@ else:
 
 
 #3)
-score = float(input("შემოიტანეთ გამოცდის ქულა: "))
+score = int(input("შემოიტანეთ გამოცდის ქულა: "))
 
 if 90 <= score <= 100:
     print("A")
