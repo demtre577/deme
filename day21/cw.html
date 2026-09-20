@@ -1,0 +1,122 @@
+level 21:
+1. შექმენი Text Input
+შექმენი HTML ფაილი და დაამატე <input>, სადაც მომხმარებელი შეძლებს სახელის შეყვანას.
+
+2. შექმენი Password Input
+შექმენი <input>, სადაც მომხმარებელი შეიყვანს პაროლს. გამოიყენე შესაბამისი type.
+
+3. მარტივი ფორმა
+შექმენი <form>, რომელშიც იქნება:
+label — Name
+input — სახელის შესაყვანად
+button — Submit
+
+4. Login Form
+შექმენი Login Form:
+Username
+Password
+Login ღილაკი
+თითოეულ input-ს უნდა ჰქონდეს თავისი label.
+
+5„„. Registration Form
+შექმენი Registration Form
+First Name
+Last Name
+Email
+Password
+Register ღილაკი1. მარტივი ფორმა
+შექმენი <form>, რომელშიც იქნება:
+label — Name
+input — სახელის შესაყვანად
+button — Submit
+
+
+
+1)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <label for="name">სახელი:</label>
+    <input type="text" id="name" name="name" placeholder="შეიყვანეთ სახელი">
+</form>
+</body>
+</html>
+
+
+2)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <label for="password">პაროლი:</label>
+    <input type="password" id="password" name="password" placeholder="შეიყვანეთ პაროლი">
+</form>
+</body>
+</html>
+
+
+3)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name">
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
+
+
+4)
+<form>
+    <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter username">
+    </div>
+    <br>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password">
+    </div>
+    <br>
+    <button type="submit">Login</button>
+</form>
+
+
+
+
+5)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <input type="text" placeholder="First Name">
+    <input type="text" placeholder="Last Name">
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <button type="submit">Register</button>
+</form>
+</body>
+</html
