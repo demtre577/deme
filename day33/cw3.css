@@ -1,0 +1,17 @@
+.container {
+  position: relative;
+  background: #e5e7eb;
+  width: 400px;
+  height: 250px;
+  border-radius: 12px;
+}
+.child-card {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #111827;
+  width: 120px;
+  height: 70px;
+  color: white;
+  border-radius: 0 12px 0 12px;
+}

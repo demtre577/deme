@@ -1,0 +1,31 @@
+.card-1 {
+    position: static;
+    background: #ff4d4d;
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    color: white;
+    margin: 10px;
+}
+
+/* მეორე ბარათი */
+.card-2 {
+    position: static;
+    background: #3b82f6;
+    width: 280px;
+    height: 80px;
+    padding: 25px;
+    color: white;
+    margin: 10px;
+}
+
+/* მესამე ბარათი */
+.card-3 {
+    position: static;
+    background: #10b981;
+    width: 150px;
+    height: 140px;
+    padding: 5px;
+    color: white;
+    margin: 10px;
+}
