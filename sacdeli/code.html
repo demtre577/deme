@@ -6,199 +6,374 @@
     <title>Document</title>
 </head>
 <body>
-    lement.style {
-    color-scheme: dark;
-    --display-scale-factor: 1;
-    zoom: 1;
-}
-.geist_mono_8d43a2aa-module__8Li5zG__variable {
-    --font-geist-mono: "Geist Mono", "Geist Mono Fallback";
-}
-.geist_a71539c9-module__T19VSG__variable {
-    --font-geist-sans: "Geist", "Geist Fallback";
-}
-:root {
-    --lightningcss-light: ;
-    --lightningcss-dark: initial;
-    color-scheme: dark;
-    --display-scale-factor: 1;
-    --color-canvas-raw: #0a0a0b;
-    --color-surface-raw: #121214;
-    --color-surface-2-raw: #18181b;
-    --color-line-raw: #27272a;
-    --color-ink-raw: #f4f4f5;
-    --color-muted-raw: #a1a1aa;
-    --color-faint-raw: #71717a;
-    --color-accent-raw: #a3e635;
-    --color-accent-ink-raw: #14532d;
-    --color-danger-raw: #fda4af;
-    --color-ok-raw: #6ee7b7;
-    --modal-card-bg: linear-gradient(135deg, #ffffff0d 0%, #ffffff05 50%, #ffffff03 100%);
-    --modal-card-border: #ffffff1a;
-    --modal-card-shadow: inset 0 1px 1px #ffffff0d, 0 20px 50px #0009;
-    --interactive-hover-bg: #ffffff0d;
-    --background: var(--color-canvas-raw);
-    --foreground: var(--color-ink-raw);
-}
-.antialiased {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.h-full {
-    height: 100%;
-}
-html {
-    --lightningcss-light: ;
-    --lightningcss-dark: initial;
-    color-scheme: dark;
-}
-html, :host {
-    -webkit-text-size-adjust: 100%;
-    tab-size: 4;
-    line-height: 1.5;
-    font-family: var(--default-font-family);
-    font-feature-settings: var(--default-font-feature-settings, normal);
-    font-variation-settings: var(--default-font-variation-settings, normal);
-    -webkit-tap-highlight-color: transparent;
-}
-*, :after, :before, ::backdrop {
-    box-sizing: border-box;
-    border: 0 solid;
-    margin: 0;
-    padding: 0;
-}
-@supports (color:lab(0% 0 0)) {
-    :root, :host {
-        --color-amber-100: lab(95.916% -1.21653 23.111);
-        --color-amber-200: lab(91.7203% -.505269 49.9084);
-        --color-amber-300: lab(86.4156% 6.13147 78.3961);
-        --color-lime-100: lab(96.8662% -11.7133 22.0854);
-        --color-lime-200: lab(94.0718% -22.5338 42.5238);
-        --color-lime-300: lab(89.9218% -35.6546 68.5254);
-        --color-lime-400: lab(83.7876% -45.0447 88.4738);
-        --color-lime-500: lab(75.3197% -46.6547 86.1778);
-        --color-lime-600: lab(61.1055% -41.0235 73.1483);
-        --color-lime-700: lab(47.246% -32.2589 55.8249);
-        --color-lime-800: lab(37.7655% -25.1694 43.0683);
-        --color-lime-900: lab(31.9931% -20.7654 33.7379);
-        --color-emerald-200: lab(90.2247% -31.039 9.47084);
-        --color-emerald-300: lab(83.9203% -48.7124 13.8849);
-        --color-teal-300: lab(84.8977% -48.1516 -1.3321);
-        --color-cyan-100: lab(95.3146% -13.8285 -6.84732);
-        --color-cyan-200: lab(91.0821% -24.0435 -12.8306);
-        --color-cyan-300: lab(85.3886% -36.7636 -21.5716);
-        --color-cyan-400: lab(76.6045% -40.9406 -29.6231);
-        --color-sky-100: lab(94.3709% -4.56053 -8.23453);
-        --color-sky-200: lab(88.6983% -11.3978 -16.8488);
-        --color-sky-300: lab(80.3307% -20.2945 -31.385);
-        --color-violet-100: lab(93.0838% 4.35197 -9.88284);
-        --color-violet-200: lab(87.0888% 8.53688 -19.4189);
-        --color-violet-300: lab(76.7419% 18.3911 -37.0706);
-        --color-fuchsia-200: lab(87.7108% 19.9958 -18.2054);
-        --color-fuchsia-300: lab(78.5378% 39.3533 -32.9615);
-        --color-rose-100: lab(92.8221% 9.86832 2.60075);
-        --color-rose-200: lab(86.806% 19.1909 4.07754);
-        --color-rose-300: lab(76.6339% 38.3549 9.68835);
-        --color-rose-400: lab(64.4125% 63.0291 19.2068);
-        --color-rose-500: lab(56.101% 79.4328 31.4532);
-        --color-gray-400: lab(65.9269% -.832707 -8.17473);
-        --color-gray-700: lab(27.1134% -.956401 -12.3224);
-        --color-gray-800: lab(16.1051% -1.18239 -11.7533);
-        --color-neutral-500: lab(48.496% 0 0);
-        --color-neutral-600: lab(34.924% 0 0);
-        --color-neutral-700: lab(27.036% 0 0);
-        --color-neutral-800: lab(15.204% 0 -.00000596046);
-    }
-}
-:root, :host {
-    --color-amber-100: #fef3c6;
-    --color-amber-200: #fee685;
-    --color-amber-300: #ffd236;
-    --color-lime-100: #ecfcca;
-    --color-lime-200: #d8f999;
-    --color-lime-300: #bbf451;
-    --color-lime-400: #9de500;
-    --color-lime-500: #80cd00;
-    --color-lime-600: #62a400;
-    --color-lime-700: #4b7d00;
-    --color-lime-800: #3d6300;
-    --color-lime-900: #35530e;
-    --color-emerald-200: #a4f4cf;
-    --color-emerald-300: #5ee9b5;
-    --color-teal-300: #46ecd5;
-    --color-cyan-100: #cefafe;
-    --color-cyan-200: #a2f4fd;
-    --color-cyan-300: #53eafd;
-    --color-cyan-400: #00d2ef;
-    --color-sky-100: #dff2fe;
-    --color-sky-200: #b8e6fe;
-    --color-sky-300: #77d4ff;
-    --color-violet-100: #ede9fe;
-    --color-violet-200: #ddd6ff;
-    --color-violet-300: #c4b4ff;
-    --color-fuchsia-200: #f6cfff;
-    --color-fuchsia-300: #f2a9ff;
-    --color-rose-100: #ffe4e6;
-    --color-rose-200: #ffccd3;
-    --color-rose-300: #ffa2ae;
-    --color-rose-400: #ff667f;
-    --color-rose-500: #ff2357;
-    --color-gray-400: #99a1af;
-    --color-gray-700: #364153;
-    --color-gray-800: #1e2939;
-    --color-neutral-500: #737373;
-    --color-neutral-600: #525252;
-    --color-neutral-700: #404040;
-    --color-neutral-800: #262626;
-    --color-black: #000;
-    --color-white: #fff;
-    --spacing: .25rem;
-    --container-sm: 24rem;
-    --container-md: 28rem;
-    --container-lg: 32rem;
-    --container-xl: 36rem;
-    --container-2xl: 42rem;
-    --container-4xl: 56rem;
-    --container-5xl: 64rem;
-    --text-xs: .75rem;
-Show all properties (55 more)
-}
-html[Attributes Style] {
-    -webkit-locale: "ka-GE";
-}
-user agent stylesheet
-:root {
-    view-transition-name: root;
-}
-user agent stylesheet
-html {
-    display: block;
-}
-*, :after, :before, ::backdrop {
-    box-sizing: border-box;
-    border: 0 solid;
-    margin: 0;
-    padding: 0;
-}
-*, :after, :before, ::backdrop {
-    box-sizing: border-box;
-    border: 0 solid;
-    margin: 0;
-    padding: 0;
-}
-*, :after, :before, ::backdrop {
-    box-sizing: border-box;
-    border: 0 solid;
-    margin: 0;
-    padding: 0;
-}
-<style>
-@font-face {
-    font-family: Geist;
-    font-style: normal;
-    font-weight: 100 900;
-    font-display: swap;
-    src: url(../media/fef07dbb0973bf53-s.12tyk43_3sh9u.woff2) format("woff2");
-    unicode-range: U +460 -52F, U +1C80 -1C8A, U +20B4, U +2DE0 -2DFF, U + A640-A69F, U + FE2E-FE2F
+    <!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>igsona - მიმოხილვა</title>
+    <style>
+        :root {
+            --bg-color: #0b0c0b;
+            --card-bg: #111211;
+            --accent-green: #83d01b;
+            --text-main: #ffffff;
+            --text-muted: #868786;
+            --border-color: #222422;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* კონტეინერი მობილურის ეკრანის სიმულაციისთვის */
+        .app-container {
+            width: 100%;
+            max-width: 480px;
+            min-height: 100vh;
+            background-color: var(--bg-color);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding-bottom: 80px; /* ადგილი ქვედა მენიუსთვის */
+        }
+
+        /* ზედა ბარი */
+        .top-navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .logo span {
+            color: var(--accent-green);
+        }
+
+        .user-section {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 14px;
+        }
+
+        .user-email {
+            color: var(--text-muted);
+            max-width: 120px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .logout-btn {
+            background: none;
+            border: 1px solid #333;
+            color: var(--text-main);
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        /* კონტენტი */
+        .main-content {
+            padding: 0 16px;
+        }
+
+        h1.page-title {
+            font-size: 26px;
+            margin: 10px 0 4px 0;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 24px;
+        }
+
+        h2.date-title {
+            font-size: 22px;
+            margin: 20px 0 8px 0;
+        }
+
+        .date-notice {
+            color: var(--text-muted);
+            font-size: 13px;
+            margin-bottom: 16px;
+        }
+
+        /* ნავიგაციის ღილაკები */
+        .navigation-row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        .nav-btn {
+            background-color: #161716;
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            flex: 1;
+        }
+
+        .nav-btn.disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+
+        .date-picker-row {
+            display: flex;
+            justify-content: flex-end;
+            gap: 8px;
+            margin-bottom: 24px;
+        }
+
+        .today-badge {
+            background-color: #1c2412;
+            border: 1px solid #2e4014;
+            color: var(--accent-green);
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .date-display {
+            background-color: #161716;
+            border: 1px solid var(--border-color);
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* ჯგუფის ბარათი */
+        .group-card {
+            border: 1px solid #22251a;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background: linear-gradient(145deg, #121312, #0d0e0d);
+        }
+
+        .group-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+
+        .group-name {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .instructor-name {
+            color: var(--text-muted);
+            font-size: 15px;
+            margin: 4px 0 0 0;
+        }
+
+        .chevron-icon {
+            color: var(--accent-green);
+            font-size: 20px;
+        }
+
+        .group-summary {
+            font-size: 14px;
+            color: #dcdcdc;
+            line-height: 1.6;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+        }
+
+        .green-text {
+            color: var(--accent-green);
+            font-weight: bold;
+        }
+
+        /* ცხრილის სათაურები */
+        .table-header {
+            display: flex;
+            justify-content: space-between;
+            color: var(--text-muted);
+            font-size: 13px;
+            padding-bottom: 8px;
+        }
+
+        /* სტუდენტის მწკრივი */
+        .student-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 0;
+            border-bottom: 1px solid #191a19;
+        }
+
+        .student-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .rank-badge {
+            width: 28px;
+            height: 28px;
+            background-color: var(--accent-green);
+            color: #000000;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .student-name-block {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .student-name {
+            font-size: 15px;
+            font-weight: 600;
+            margin: 0 0 4px 0;
+        }
+
+        .student-metrics {
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+
+        .total-score {
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--accent-green);
+            min-width: 24px;
+            text-align: right;
+        }
+
+        .total-score.empty {
+            color: var(--text-muted);
+        }
+
+        /* ქვედა ნავიგაცია */
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            max-width: 480px;
+            background-color: var(--card-bg);
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            z-index: 100;
+        }
+
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: var(--text-muted);
+            font-size: 10px;
+            text-decoration: none;
+            gap: 4px;
+        }
+
+        .nav-item.active {
+            color: var(--accent-green);
+        }
+
+        .nav-icon {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="app-container">
+    
+    <!-- ზედა პანელი -->
+    <header class="top-navbar">
+        <div class="logo"><span>G</span> igsona</div>
+        <div class="user-section">
+            <span class="user-email">demetrekachkachashvili24@gmail.com</span>
+            <button class="logout-btn">გასვლა</button>
+        </div>
+    </header>
+
+    <!-- მთავარი კონტენტი -->
+    <main class="main-content">
+        <h1 class="page-title">მიმოხილვა</h1>
+        <div class="subtitle">ნახეთ, როგორ იმუშავა თითოეულმა ჯგუფმა გაკვეთილის დღეს</div>
+
+        <h2 class="date-title">ოთხშაბათი, 21 ოქტომბერი, 2026</h2>
+        <div class="date-notice">დღეს ქულები ჯერ არ გაცემულა, ამიტომ ეს უახლესი გაკვეთილის დღეა.</div>
+
+        <!-- ფილტრები და თარიღი -->
+        <div class="navigation-row">
+            <button class="nav-btn">‹ ადრინდელი გაკვეთილი</button>
+            <button class="nav-btn disabled" disabled>მოგვიანო გაკვეთილი ›</button>
+        </div>
+
+        <div class="date-picker-row">
+            <span class="today-badge">დღეს</span>
+            <div class="date-display">21-Oct-2026 📅</div>
+        </div>
+
+        <!-- ჯგუფის ბარათი -->
+        <div class="group-card">
+            <div class="group-header">
+                <div>
+                    <h3 class="group-name">Group 115</h3>
+                    <p class="instructor-name">lasha</p>
+                </div>
+                <div class="chevron-icon">▲</div>
+            </div>
+
+            <div class="group-summary">
+                <div>საუკეთესო სტუდენტი: ვაკო მაზმიშვილი <span class="green-text">(30)</span></div>
+                <div>გაცემული აურა: <span class="green-text">+370</span> · 22 სტუდენტი</div>
+            </div>
+
+            <!-- ცხრილის სათაური -->
+            <div class="table-header">
+                <span>ადგილი სტუდენტი</span>
+                <span>ჯამი</span>
+            </div>
+
+            <!-- სტუდენტების სია -->
+            <div class="students-list-wrapper">
+                
+                <!-- 1 -->
+                <div class="student-row">
+                    <div class="student-left">
+                        <div class="rank-badge">1</div>
+                        <div class="student-name-block">
+                            <h4 class="student-
 </body>
 </html>
