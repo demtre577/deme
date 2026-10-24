@@ -13,367 +13,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>igsona - მიმოხილვა</title>
     <style>
-        :root {
-            --bg-color: #0b0c0b;
-            --card-bg: #111211;
-            --accent-green: #83d01b;
-            --text-main: #ffffff;
-            --text-muted: #868786;
-            --border-color: #222422;
-        }
-
         body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        /* კონტეინერი მობილურის ეკრანის სიმულაციისთვის */
-        .app-container {
-            width: 100%;
-            max-width: 480px;
-            min-height: 100vh;
-            background-color: var(--bg-color);
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            padding-bottom: 80px; /* ადგილი ქვედა მენიუსთვის */
-        }
-
-        /* ზედა ბარი */
-        .top-navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 16px;
-        }
-
-        .logo {
-            font-size: 28px;
-            font-weight: bold;
-            color: var(--text-main);
-            display: flex;
-            align-items: center;
-            gap: 4px;
-        }
-
-        .logo span {
-            color: var(--accent-green);
-        }
-
-        .user-section {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-size: 14px;
-        }
-
-        .user-email {
-            color: var(--text-muted);
-            max-width: 120px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        .logout-btn {
-            background: none;
-            border: 1px solid #333;
-            color: var(--text-main);
-            padding: 6px 12px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 12px;
-        }
-
-        /* კონტენტი */
-        .main-content {
-            padding: 0 16px;
-        }
-
-        h1.page-title {
-            font-size: 26px;
-            margin: 10px 0 4px 0;
-        }
-
-        .subtitle {
-            color: var(--text-muted);
-            font-size: 14px;
-            margin-bottom: 24px;
-        }
-
-        h2.date-title {
-            font-size: 22px;
-            margin: 20px 0 8px 0;
-        }
-
-        .date-notice {
-            color: var(--text-muted);
-            font-size: 13px;
-            margin-bottom: 16px;
-        }
-
-        /* ნავიგაციის ღილაკები */
-        .navigation-row {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 16px;
-        }
-
-        .nav-btn {
-            background-color: #161716;
-            border: 1px solid var(--border-color);
-            color: var(--text-main);
-            padding: 10px 16px;
-            border-radius: 8px;
-            font-size: 14px;
-            cursor: pointer;
-            flex: 1;
-        }
-
-        .nav-btn.disabled {
-            opacity: 0.4;
-            cursor: not-allowed;
-        }
-
-        .date-picker-row {
-            display: flex;
-            justify-content: flex-end;
-            gap: 8px;
-            margin-bottom: 24px;
-        }
-
-        .today-badge {
-            background-color: #1c2412;
-            border: 1px solid #2e4014;
-            color: var(--accent-green);
-            padding: 6px 12px;
-            border-radius: 6px;
-            font-size: 13px;
-            font-weight: bold;
-        }
-
-        .date-display {
-            background-color: #161716;
-            border: 1px solid var(--border-color);
-            padding: 6px 12px;
-            border-radius: 6px;
-            font-size: 13px;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        /* ჯგუფის ბარათი */
-        .group-card {
-            border: 1px solid #22251a;
-            border-radius: 16px;
             padding: 20px;
-            margin-bottom: 20px;
-            background: linear-gradient(145deg, #121312, #0d0e0d);
+        }
+
+        .dashboard-card {
+            background-color: #1a1a1a;
+            border: 1px solid #333333;
+            border-radius: 12px;
+            padding: 24px;
+            max-width: 600px;
+            margin: 0 auto;
         }
 
         .group-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 12px;
-        }
-
-        .group-name {
-            font-size: 22px;
-            font-weight: bold;
-            margin: 0;
-        }
-
-        .instructor-name {
-            color: var(--text-muted);
-            font-size: 15px;
-            margin: 4px 0 0 0;
-        }
-
-        .chevron-icon {
-            color: var(--accent-green);
-            font-size: 20px;
-        }
-
-        .group-summary {
-            font-size: 14px;
-            color: #dcdcdc;
-            line-height: 1.6;
-            border-bottom: 1px solid var(--border-color);
+            border-bottom: 1px solid #2d2d2d;
             padding-bottom: 16px;
             margin-bottom: 16px;
         }
 
-        .green-text {
-            color: var(--accent-green);
+        .group-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .instructor {
+            color: #888888;
+            font-size: 16px;
+            margin: 4px 0 12px 0;
+        }
+
+        .stats-info {
+            font-size: 14px;
+            color: #b3b3b3;
+            line-height: 1.6;
+        }
+
+        .highlight-green {
+            color: #76ff03;
             font-weight: bold;
         }
 
-        /* ცხრილის სათაურები */
-        .table-header {
-            display: flex;
-            justify-content: space-between;
-            color: var(--text-muted);
-            font-size: 13px;
-            padding-bottom: 8px;
+        .student-list {
+            margin-top: 20px;
         }
 
-        /* სტუდენტის მწკრივი */
         .student-row {
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            padding: 14px 0;
-            border-bottom: 1px solid #191a19;
+            justify-content: space-between;
+            padding: 16px 0;
+            border-bottom: 1px solid #2d2d2d;
         }
 
-        .student-left {
+        .student-info-block {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 16px;
         }
 
-        .rank-badge {
-            width: 28px;
-            height: 28px;
-            background-color: var(--accent-green);
+        .rank-circle {
+            background-color: #76ff03;
             color: #000000;
+            width: 32px;
+            height: 32px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: bold;
-            font-size: 13px;
+            font-size: 14px;
         }
 
-        .student-name-block {
+        .student-details {
             display: flex;
             flex-direction: column;
         }
 
         .student-name {
-            font-size: 15px;
-            font-weight: 600;
-            margin: 0 0 4px 0;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
         }
 
-        .student-metrics {
-            font-size: 11px;
-            color: var(--text-muted);
+        .score-breakdown {
+            font-size: 12px;
+            color: #888888;
+            margin-top: 4px;
         }
 
         .total-score {
-            font-size: 18px;
+            font-size: 20px;
             font-weight: bold;
-            color: var(--accent-green);
-            min-width: 24px;
-            text-align: right;
-        }
-
-        .total-score.empty {
-            color: var(--text-muted);
-        }
-
-        /* ქვედა ნავიგაცია */
-        .bottom-nav {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            max-width: 480px;
-            background-color: var(--card-bg);
-            border-top: 1px solid var(--border-color);
-            display: flex;
-            justify-content: space-around;
-            padding: 10px 0;
-            z-index: 100;
-        }
-
-        .nav-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            color: var(--text-muted);
-            font-size: 10px;
-            text-decoration: none;
-            gap: 4px;
-        }
-
-        .nav-item.active {
-            color: var(--accent-green);
-        }
-
-        .nav-icon {
-            font-size: 18px;
+            color: #76ff03;
         }
     </style>
 </head>
 <body>
 
-<div class="app-container">
-    
-    <!-- ზედა პანელი -->
-    <header class="top-navbar">
-        <div class="logo"><span>G</span> igsona</div>
-        <div class="user-section">
-            <span class="user-email">demetrekachkachashvili24@gmail.com</span>
-            <button class="logout-btn">გასვლა</button>
+<div class="dashboard-card">
+    <!-- ჯგუფის სათაური და ზოგადი ინფო -->
+    <div class="group-header">
+        <h2 class="group-name">Group 115</h2>
+        <div class="instructor">lasha</div>
+        <div class="stats-info">
+            <div>საუკეთესო სტუდენტი: ვაკო მაზმიშვილი <span class="highlight-green">(30)</span></div>
+            <div>გაცემული აურა: <span class="highlight-green">+370</span> · 22 სტუდენტი</div>
         </div>
-    </header>
+    </div>
 
-    <!-- მთავარი კონტენტი -->
-    <main class="main-content">
-        <h1 class="page-title">მიმოხილვა</h1>
-        <div class="subtitle">ნახეთ, როგორ იმუშავა თითოეულმა ჯგუფმა გაკვეთილის დღეს</div>
-
-        <h2 class="date-title">ოთხშაბათი, 21 ოქტომბერი, 2026</h2>
-        <div class="date-notice">დღეს ქულები ჯერ არ გაცემულა, ამიტომ ეს უახლესი გაკვეთილის დღეა.</div>
-
-        <!-- ფილტრები და თარიღი -->
-        <div class="navigation-row">
-            <button class="nav-btn">‹ ადრინდელი გაკვეთილი</button>
-            <button class="nav-btn disabled" disabled>მოგვიანო გაკვეთილი ›</button>
-        </div>
-
-        <div class="date-picker-row">
-            <span class="today-badge">დღეს</span>
-            <div class="date-display">21-Oct-2026 📅</div>
-        </div>
-
-        <!-- ჯგუფის ბარათი -->
-        <div class="group-card">
-            <div class="group-header">
-                <div>
-                    <h3 class="group-name">Group 115</h3>
-                    <p class="instructor-name">lasha</p>
+    <!-- სტუდენტების სია -->
+    <div class="student-list">
+        
+        <!-- სტუდენტი 1 -->
+        <div class="student-row">
+            <div class="student-info-block">
+                <div class="rank-circle">1</div>
+                <div class="student-details">
+                    <h4 class="student-name">ვაკო მაზმიშვილი</h4>
+                    <div class="score-breakdown">
+                        დასწრება 10 · კამერა 10 · აქტივობა _ · კითხვა-პასუხი _ · საკლასო მუშაობა _ · ვარჯიში 10
+                    </div>
                 </div>
-                <div class="chevron-icon">▲</div>
             </div>
+            <div class="total-score">30</div>
+        </div>
 
-            <div class="group-summary">
-                <div>საუკეთესო სტუდენტი: ვაკო მაზმიშვილი <span class="green-text">(30)</span></div>
-                <div>გაცემული აურა: <span class="green-text">+370</span> · 22 სტუდენტი</div>
+        <!-- სტუდენტი 2 -->
+        <div class="student-row">
+            <div class="student-info-block">
+                <div class="rank-circle">1</div>
+                <div class="student-details">
+                    <h4 class="student-name">პაატა ჩქარეული</h4>
+                    <div class="score-breakdown">
+                        დასწრება 10 · კამერა 10 · აქტივობა _ · კითხვა-პასუხი _ · საკლასო მუშაობა _ · ვარჯიში 10
+                    </div>
+                </div>
             </div>
+            <div class="total-score">30</div>
+        </div>
 
-            <!-- ცხრილის სათაური -->
-            <div class="table-header">
-                <span>ადგილი სტუდენტი</span>
-                <span>ჯამი</span>
-            </div>
+    </div>
+</div>
 
-            <!-- სტუდენტების სია -->
-            <div class="students-list-wrapper">
-                
-                <!-- 1 -->
-                <div class="student-row">
-                    <div class="student-left">
-                        <div class="rank-badge">1</div>
-                        <div class="student-name-block">
-                            <h4 class="student-
+</body>
+</html>
 </body>
 </html>

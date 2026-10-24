@@ -39,18 +39,31 @@ common_numbers = numbers1.intersection(numbers2)
 print(common_numbers)
 
 
+#3)
+students1 = {"გიორგი", "ანი", "ლუკა", "მარიამი"}
+students2 = {"დავითი", "ანი", "ნიკოლოზი", "ლუკა"}
+all_students = students1.union(students2)
+students_count = len(all_students)
+print(f"უნიკალური მოსწავლეების რაოდენობა: {students_count}")
+
+
+#4)
+colors1 = {"red", "green", "blue", "yellow"}
+colors2 = {"blue", "yellow", "black", "white"}
+common_colors = colors1.intersection(colors2)
+print(common_colors)
 
 
 
 
-
-
-
-
-
-
-
-
+#5)
+python_students = {"Nika", "Luka", "Giorgi", "Mariam"}
+javascript_students = {"Ani", "Luka", "Daviti", "Giorgi"}
+react_students = {"Mariam", "Nikolozi", "Ani"}
+all_students = python_students.union(javascript_students, react_students)
+both_python_js = python_students.intersection(javascript_students)
+print(f"All unique students: {all_students}")
+print(f"Students studying both Python and JS: {both_python_js}")
 
 
 
