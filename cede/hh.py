@@ -24,8 +24,8 @@
 
 
 #1)
-for i in (30):
-   if i % 3==30:
+for i in range (30):
+   if i % 330:
 
 
 
