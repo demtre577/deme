@@ -1,0 +1,73 @@
+.card {
+    background-color: #ffffff;  
+    border: 2px solid #ccc;    
+    padding: 16px;             
+    border-radius: 8px;        
+}
+
+
+
+
+
+.card { position: relative; width: 200px; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px #ccc; }
+.badge { position: absolute; padding: 4px; color: #fff; }
+.sale { top: 10px; right: 10px; background: red; }
+.new { bottom: 10px; left: 10px; background: green; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

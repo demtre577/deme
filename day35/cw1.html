@@ -1,0 +1,30 @@
+1. შექმენით ვებგვერდი, რომელზეც განთავსებული იქნება 4 ბარათი. თითოეულ ბარათს ჰქონდეს სათაური, აღწერა, ფონის ფერი, ჩარჩო, შიდა დაშორება (padding) და მომრგვალებული კუთხეები (border-radius). პირველ ორ ბარათს მიანიჭეთ position: static, ხოლო დანარჩენ ორს position: relative. top, left, right და bottom თვისებების გამოყენებით გადაადგილეთ Relative ბარათები
+ სხვადასხვა მიმართულებით. დააკვირდით, რა განსხვავებაა Static და Relative პოზიციონირებას შორის.
+
+
+
+1.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+  div { padding: 15px; margin: 10px; border: 1px solid; border-radius: 8px; }
+</style>
+
+<div style="position: static; background: lightblue;">1 Static</div>
+<div style="position: static; background: lightblue;">2 Static</div>
+<div style="position: relative; top: 20px; left: 20px; background: lightgreen;">3 Relative</div>
+<div style="position: relative; bottom: 20px; right: 20px; background: lightpink;">4 Relative</div>
+</html>
+
+
+
+
+
+
+
